@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ShippingType_GetProductShippingDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="productid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ShippingType_GetProductShippingDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ShippingType_GetProductShippingDetailResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ShippingType_CreateShippingtypeId">
+        <s:complexType />
+      </s:element>
+      <s:element name="ShippingType_CreateShippingtypeIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ShippingType_CreateShippingtypeIdResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ShippingType_GetAll">
+        <s:complexType />
+      </s:element>
+      <s:element name="ShippingType_GetAllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ShippingType_GetAllResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateShippingType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dataSet">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateShippingTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateShippingTypeResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="ShippingType_GetProductShippingDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:ShippingType_GetProductShippingDetail" />
+  </wsdl:message>
+  <wsdl:message name="ShippingType_GetProductShippingDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:ShippingType_GetProductShippingDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ShippingType_CreateShippingtypeIdSoapIn">
+    <wsdl:part name="parameters" element="tns:ShippingType_CreateShippingtypeId" />
+  </wsdl:message>
+  <wsdl:message name="ShippingType_CreateShippingtypeIdSoapOut">
+    <wsdl:part name="parameters" element="tns:ShippingType_CreateShippingtypeIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ShippingType_GetAllSoapIn">
+    <wsdl:part name="parameters" element="tns:ShippingType_GetAll" />
+  </wsdl:message>
+  <wsdl:message name="ShippingType_GetAllSoapOut">
+    <wsdl:part name="parameters" element="tns:ShippingType_GetAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateShippingTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateShippingType" />
+  </wsdl:message>
+  <wsdl:message name="UpdateShippingTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateShippingTypeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="serShippingTypeSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ShippingType_GetProductShippingDetail">
+      <wsdl:input message="tns:ShippingType_GetProductShippingDetailSoapIn" />
+      <wsdl:output message="tns:ShippingType_GetProductShippingDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ShippingType_CreateShippingtypeId">
+      <wsdl:input message="tns:ShippingType_CreateShippingtypeIdSoapIn" />
+      <wsdl:output message="tns:ShippingType_CreateShippingtypeIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ShippingType_GetAll">
+      <wsdl:input message="tns:ShippingType_GetAllSoapIn" />
+      <wsdl:output message="tns:ShippingType_GetAllSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateShippingType">
+      <wsdl:input message="tns:UpdateShippingTypeSoapIn" />
+      <wsdl:output message="tns:UpdateShippingTypeSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="serShippingTypeSoap" type="tns:serShippingTypeSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShippingType_GetProductShippingDetail">
+      <soap:operation soapAction="http://tempuri.org/ShippingType_GetProductShippingDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShippingType_CreateShippingtypeId">
+      <soap:operation soapAction="http://tempuri.org/ShippingType_CreateShippingtypeId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShippingType_GetAll">
+      <soap:operation soapAction="http://tempuri.org/ShippingType_GetAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateShippingType">
+      <soap:operation soapAction="http://tempuri.org/UpdateShippingType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="serShippingTypeSoap12" type="tns:serShippingTypeSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShippingType_GetProductShippingDetail">
+      <soap12:operation soapAction="http://tempuri.org/ShippingType_GetProductShippingDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShippingType_CreateShippingtypeId">
+      <soap12:operation soapAction="http://tempuri.org/ShippingType_CreateShippingtypeId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShippingType_GetAll">
+      <soap12:operation soapAction="http://tempuri.org/ShippingType_GetAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateShippingType">
+      <soap12:operation soapAction="http://tempuri.org/UpdateShippingType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="serShippingType">
+    <wsdl:port name="serShippingTypeSoap" binding="tns:serShippingTypeSoap">
+      <soap:address location="http://localhost:19548/MahaplastWebApp_19.9.2012/serShippingType.asmx" />
+    </wsdl:port>
+    <wsdl:port name="serShippingTypeSoap12" binding="tns:serShippingTypeSoap12">
+      <soap12:address location="http://localhost:19548/MahaplastWebApp_19.9.2012/serShippingType.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

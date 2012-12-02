@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Product_GetProdIdToFindImage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Product_GetProdIdToFindImageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Product_GetProdIdToFindImageResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Product_GetStock">
+        <s:complexType />
+      </s:element>
+      <s:element name="Product_GetStockResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Product_GetStockResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Product_CreateProductId">
+        <s:complexType />
+      </s:element>
+      <s:element name="Product_CreateProductIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Product_CreateProductIdResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Product_GetAll">
+        <s:complexType />
+      </s:element>
+      <s:element name="Product_GetAllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Product_GetAllResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Product_GetMechantComment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="productid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Product_GetMechantCommentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Product_GetMechantCommentResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateProduct">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dataSet">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateProductResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateProductResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="Product_GetProdIdToFindImageSoapIn">
+    <wsdl:part name="parameters" element="tns:Product_GetProdIdToFindImage" />
+  </wsdl:message>
+  <wsdl:message name="Product_GetProdIdToFindImageSoapOut">
+    <wsdl:part name="parameters" element="tns:Product_GetProdIdToFindImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="Product_GetStockSoapIn">
+    <wsdl:part name="parameters" element="tns:Product_GetStock" />
+  </wsdl:message>
+  <wsdl:message name="Product_GetStockSoapOut">
+    <wsdl:part name="parameters" element="tns:Product_GetStockResponse" />
+  </wsdl:message>
+  <wsdl:message name="Product_CreateProductIdSoapIn">
+    <wsdl:part name="parameters" element="tns:Product_CreateProductId" />
+  </wsdl:message>
+  <wsdl:message name="Product_CreateProductIdSoapOut">
+    <wsdl:part name="parameters" element="tns:Product_CreateProductIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="Product_GetAllSoapIn">
+    <wsdl:part name="parameters" element="tns:Product_GetAll" />
+  </wsdl:message>
+  <wsdl:message name="Product_GetAllSoapOut">
+    <wsdl:part name="parameters" element="tns:Product_GetAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="Product_GetMechantCommentSoapIn">
+    <wsdl:part name="parameters" element="tns:Product_GetMechantComment" />
+  </wsdl:message>
+  <wsdl:message name="Product_GetMechantCommentSoapOut">
+    <wsdl:part name="parameters" element="tns:Product_GetMechantCommentResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateProductSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateProduct" />
+  </wsdl:message>
+  <wsdl:message name="UpdateProductSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateProductResponse" />
+  </wsdl:message>
+  <wsdl:portType name="serProductSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Product_GetProdIdToFindImage">
+      <wsdl:input message="tns:Product_GetProdIdToFindImageSoapIn" />
+      <wsdl:output message="tns:Product_GetProdIdToFindImageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Product_GetStock">
+      <wsdl:input message="tns:Product_GetStockSoapIn" />
+      <wsdl:output message="tns:Product_GetStockSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Product_CreateProductId">
+      <wsdl:input message="tns:Product_CreateProductIdSoapIn" />
+      <wsdl:output message="tns:Product_CreateProductIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Product_GetAll">
+      <wsdl:input message="tns:Product_GetAllSoapIn" />
+      <wsdl:output message="tns:Product_GetAllSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Product_GetMechantComment">
+      <wsdl:input message="tns:Product_GetMechantCommentSoapIn" />
+      <wsdl:output message="tns:Product_GetMechantCommentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProduct">
+      <wsdl:input message="tns:UpdateProductSoapIn" />
+      <wsdl:output message="tns:UpdateProductSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="serProductSoap" type="tns:serProductSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Product_GetProdIdToFindImage">
+      <soap:operation soapAction="http://tempuri.org/Product_GetProdIdToFindImage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Product_GetStock">
+      <soap:operation soapAction="http://tempuri.org/Product_GetStock" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Product_CreateProductId">
+      <soap:operation soapAction="http://tempuri.org/Product_CreateProductId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Product_GetAll">
+      <soap:operation soapAction="http://tempuri.org/Product_GetAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Product_GetMechantComment">
+      <soap:operation soapAction="http://tempuri.org/Product_GetMechantComment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProduct">
+      <soap:operation soapAction="http://tempuri.org/UpdateProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="serProductSoap12" type="tns:serProductSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Product_GetProdIdToFindImage">
+      <soap12:operation soapAction="http://tempuri.org/Product_GetProdIdToFindImage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Product_GetStock">
+      <soap12:operation soapAction="http://tempuri.org/Product_GetStock" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Product_CreateProductId">
+      <soap12:operation soapAction="http://tempuri.org/Product_CreateProductId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Product_GetAll">
+      <soap12:operation soapAction="http://tempuri.org/Product_GetAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Product_GetMechantComment">
+      <soap12:operation soapAction="http://tempuri.org/Product_GetMechantComment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProduct">
+      <soap12:operation soapAction="http://tempuri.org/UpdateProduct" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="serProduct">
+    <wsdl:port name="serProductSoap" binding="tns:serProductSoap">
+      <soap:address location="http://localhost:19548/MahaplastWebApp_19.9.2012/serProduct.asmx" />
+    </wsdl:port>
+    <wsdl:port name="serProductSoap12" binding="tns:serProductSoap12">
+      <soap12:address location="http://localhost:19548/MahaplastWebApp_19.9.2012/serProduct.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

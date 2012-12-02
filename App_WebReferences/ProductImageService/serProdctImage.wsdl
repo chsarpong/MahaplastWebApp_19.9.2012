@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProductImage_GetBoxoneImage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="proidforimage" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProductImage_GetBoxoneImageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProductImage_GetBoxoneImageResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProductImage_GetFashMidImHandler">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="categoryname" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProductImage_GetFashMidImHandlerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProductImage_GetFashMidImHandlerResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProductImage_GetFashbigbannerForHandler">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="categoryname" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProductImage_GetFashbigbannerForHandlerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProductImage_GetFashbigbannerForHandlerResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProductImage_GetFashImgtwoForHandler">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="categoryname" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProductImage_GetFashImgtwoForHandlerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProductImage_GetFashImgtwoForHandlerResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProductImage_GetFashImgOneForHandler">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="categoryname" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProductImage_GetFashImgOneForHandlerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProductImage_GetFashImgOneForHandlerResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProductImage_GetFashionCategoryForPage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="productcategoryId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProductImage_GetFashionCategoryForPageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProductImage_GetFashionCategoryForPageResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProductImage_GetFashionCategoryForHandler">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="productcategoryId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProductImage_GetFashionCategoryForHandlerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProductImage_GetFashionCategoryForHandlerResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProductImage_Test2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="picId2" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProductImage_Test2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProductImage_Test2Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProductImage_GetImageTest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="picId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProductImage_GetImageTestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProductImage_GetImageTestResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProductImage_CreateProductImgId">
+        <s:complexType />
+      </s:element>
+      <s:element name="ProductImage_CreateProductImgIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProductImage_CreateProductImgIdResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProductImage_GetAll">
+        <s:complexType />
+      </s:element>
+      <s:element name="ProductImage_GetAllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProductImage_GetAllResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateProdctImage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dataSet">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateProdctImageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateProdctImageResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProductImage_GetBoxoneImageSoapIn">
+    <wsdl:part name="parameters" element="tns:ProductImage_GetBoxoneImage" />
+  </wsdl:message>
+  <wsdl:message name="ProductImage_GetBoxoneImageSoapOut">
+    <wsdl:part name="parameters" element="tns:ProductImage_GetBoxoneImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProductImage_GetFashMidImHandlerSoapIn">
+    <wsdl:part name="parameters" element="tns:ProductImage_GetFashMidImHandler" />
+  </wsdl:message>
+  <wsdl:message name="ProductImage_GetFashMidImHandlerSoapOut">
+    <wsdl:part name="parameters" element="tns:ProductImage_GetFashMidImHandlerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProductImage_GetFashbigbannerForHandlerSoapIn">
+    <wsdl:part name="parameters" element="tns:ProductImage_GetFashbigbannerForHandler" />
+  </wsdl:message>
+  <wsdl:message name="ProductImage_GetFashbigbannerForHandlerSoapOut">
+    <wsdl:part name="parameters" element="tns:ProductImage_GetFashbigbannerForHandlerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProductImage_GetFashImgtwoForHandlerSoapIn">
+    <wsdl:part name="parameters" element="tns:ProductImage_GetFashImgtwoForHandler" />
+  </wsdl:message>
+  <wsdl:message name="ProductImage_GetFashImgtwoForHandlerSoapOut">
+    <wsdl:part name="parameters" element="tns:ProductImage_GetFashImgtwoForHandlerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProductImage_GetFashImgOneForHandlerSoapIn">
+    <wsdl:part name="parameters" element="tns:ProductImage_GetFashImgOneForHandler" />
+  </wsdl:message>
+  <wsdl:message name="ProductImage_GetFashImgOneForHandlerSoapOut">
+    <wsdl:part name="parameters" element="tns:ProductImage_GetFashImgOneForHandlerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProductImage_GetFashionCategoryForPageSoapIn">
+    <wsdl:part name="parameters" element="tns:ProductImage_GetFashionCategoryForPage" />
+  </wsdl:message>
+  <wsdl:message name="ProductImage_GetFashionCategoryForPageSoapOut">
+    <wsdl:part name="parameters" element="tns:ProductImage_GetFashionCategoryForPageResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProductImage_GetFashionCategoryForHandlerSoapIn">
+    <wsdl:part name="parameters" element="tns:ProductImage_GetFashionCategoryForHandler" />
+  </wsdl:message>
+  <wsdl:message name="ProductImage_GetFashionCategoryForHandlerSoapOut">
+    <wsdl:part name="parameters" element="tns:ProductImage_GetFashionCategoryForHandlerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProductImage_Test2SoapIn">
+    <wsdl:part name="parameters" element="tns:ProductImage_Test2" />
+  </wsdl:message>
+  <wsdl:message name="ProductImage_Test2SoapOut">
+    <wsdl:part name="parameters" element="tns:ProductImage_Test2Response" />
+  </wsdl:message>
+  <wsdl:message name="ProductImage_GetImageTestSoapIn">
+    <wsdl:part name="parameters" element="tns:ProductImage_GetImageTest" />
+  </wsdl:message>
+  <wsdl:message name="ProductImage_GetImageTestSoapOut">
+    <wsdl:part name="parameters" element="tns:ProductImage_GetImageTestResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProductImage_CreateProductImgIdSoapIn">
+    <wsdl:part name="parameters" element="tns:ProductImage_CreateProductImgId" />
+  </wsdl:message>
+  <wsdl:message name="ProductImage_CreateProductImgIdSoapOut">
+    <wsdl:part name="parameters" element="tns:ProductImage_CreateProductImgIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProductImage_GetAllSoapIn">
+    <wsdl:part name="parameters" element="tns:ProductImage_GetAll" />
+  </wsdl:message>
+  <wsdl:message name="ProductImage_GetAllSoapOut">
+    <wsdl:part name="parameters" element="tns:ProductImage_GetAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateProdctImageSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateProdctImage" />
+  </wsdl:message>
+  <wsdl:message name="UpdateProdctImageSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateProdctImageResponse" />
+  </wsdl:message>
+  <wsdl:portType name="serProdctImageSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProductImage_GetBoxoneImage">
+      <wsdl:input message="tns:ProductImage_GetBoxoneImageSoapIn" />
+      <wsdl:output message="tns:ProductImage_GetBoxoneImageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProductImage_GetFashMidImHandler">
+      <wsdl:input message="tns:ProductImage_GetFashMidImHandlerSoapIn" />
+      <wsdl:output message="tns:ProductImage_GetFashMidImHandlerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProductImage_GetFashbigbannerForHandler">
+      <wsdl:input message="tns:ProductImage_GetFashbigbannerForHandlerSoapIn" />
+      <wsdl:output message="tns:ProductImage_GetFashbigbannerForHandlerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProductImage_GetFashImgtwoForHandler">
+      <wsdl:input message="tns:ProductImage_GetFashImgtwoForHandlerSoapIn" />
+      <wsdl:output message="tns:ProductImage_GetFashImgtwoForHandlerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProductImage_GetFashImgOneForHandler">
+      <wsdl:input message="tns:ProductImage_GetFashImgOneForHandlerSoapIn" />
+      <wsdl:output message="tns:ProductImage_GetFashImgOneForHandlerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProductImage_GetFashionCategoryForPage">
+      <wsdl:input message="tns:ProductImage_GetFashionCategoryForPageSoapIn" />
+      <wsdl:output message="tns:ProductImage_GetFashionCategoryForPageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProductImage_GetFashionCategoryForHandler">
+      <wsdl:input message="tns:ProductImage_GetFashionCategoryForHandlerSoapIn" />
+      <wsdl:output message="tns:ProductImage_GetFashionCategoryForHandlerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProductImage_Test2">
+      <wsdl:input message="tns:ProductImage_Test2SoapIn" />
+      <wsdl:output message="tns:ProductImage_Test2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProductImage_GetImageTest">
+      <wsdl:input message="tns:ProductImage_GetImageTestSoapIn" />
+      <wsdl:output message="tns:ProductImage_GetImageTestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProductImage_CreateProductImgId">
+      <wsdl:input message="tns:ProductImage_CreateProductImgIdSoapIn" />
+      <wsdl:output message="tns:ProductImage_CreateProductImgIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProductImage_GetAll">
+      <wsdl:input message="tns:ProductImage_GetAllSoapIn" />
+      <wsdl:output message="tns:ProductImage_GetAllSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProdctImage">
+      <wsdl:input message="tns:UpdateProdctImageSoapIn" />
+      <wsdl:output message="tns:UpdateProdctImageSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="serProdctImageSoap" type="tns:serProdctImageSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductImage_GetBoxoneImage">
+      <soap:operation soapAction="http://tempuri.org/ProductImage_GetBoxoneImage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductImage_GetFashMidImHandler">
+      <soap:operation soapAction="http://tempuri.org/ProductImage_GetFashMidImHandler" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductImage_GetFashbigbannerForHandler">
+      <soap:operation soapAction="http://tempuri.org/ProductImage_GetFashbigbannerForHandler" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductImage_GetFashImgtwoForHandler">
+      <soap:operation soapAction="http://tempuri.org/ProductImage_GetFashImgtwoForHandler" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductImage_GetFashImgOneForHandler">
+      <soap:operation soapAction="http://tempuri.org/ProductImage_GetFashImgOneForHandler" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductImage_GetFashionCategoryForPage">
+      <soap:operation soapAction="http://tempuri.org/ProductImage_GetFashionCategoryForPage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductImage_GetFashionCategoryForHandler">
+      <soap:operation soapAction="http://tempuri.org/ProductImage_GetFashionCategoryForHandler" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductImage_Test2">
+      <soap:operation soapAction="http://tempuri.org/ProductImage_Test2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductImage_GetImageTest">
+      <soap:operation soapAction="http://tempuri.org/ProductImage_GetImageTest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductImage_CreateProductImgId">
+      <soap:operation soapAction="http://tempuri.org/ProductImage_CreateProductImgId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductImage_GetAll">
+      <soap:operation soapAction="http://tempuri.org/ProductImage_GetAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProdctImage">
+      <soap:operation soapAction="http://tempuri.org/UpdateProdctImage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="serProdctImageSoap12" type="tns:serProdctImageSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductImage_GetBoxoneImage">
+      <soap12:operation soapAction="http://tempuri.org/ProductImage_GetBoxoneImage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductImage_GetFashMidImHandler">
+      <soap12:operation soapAction="http://tempuri.org/ProductImage_GetFashMidImHandler" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductImage_GetFashbigbannerForHandler">
+      <soap12:operation soapAction="http://tempuri.org/ProductImage_GetFashbigbannerForHandler" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductImage_GetFashImgtwoForHandler">
+      <soap12:operation soapAction="http://tempuri.org/ProductImage_GetFashImgtwoForHandler" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductImage_GetFashImgOneForHandler">
+      <soap12:operation soapAction="http://tempuri.org/ProductImage_GetFashImgOneForHandler" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductImage_GetFashionCategoryForPage">
+      <soap12:operation soapAction="http://tempuri.org/ProductImage_GetFashionCategoryForPage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductImage_GetFashionCategoryForHandler">
+      <soap12:operation soapAction="http://tempuri.org/ProductImage_GetFashionCategoryForHandler" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductImage_Test2">
+      <soap12:operation soapAction="http://tempuri.org/ProductImage_Test2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductImage_GetImageTest">
+      <soap12:operation soapAction="http://tempuri.org/ProductImage_GetImageTest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductImage_CreateProductImgId">
+      <soap12:operation soapAction="http://tempuri.org/ProductImage_CreateProductImgId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductImage_GetAll">
+      <soap12:operation soapAction="http://tempuri.org/ProductImage_GetAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProdctImage">
+      <soap12:operation soapAction="http://tempuri.org/UpdateProdctImage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="serProdctImage">
+    <wsdl:port name="serProdctImageSoap" binding="tns:serProdctImageSoap">
+      <soap:address location="http://localhost:19548/MahaplastWebApp_19.9.2012/serProdctImage.asmx" />
+    </wsdl:port>
+    <wsdl:port name="serProdctImageSoap12" binding="tns:serProdctImageSoap12">
+      <soap12:address location="http://localhost:19548/MahaplastWebApp_19.9.2012/serProdctImage.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

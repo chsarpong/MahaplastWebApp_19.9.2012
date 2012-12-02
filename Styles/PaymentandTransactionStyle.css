@@ -1,0 +1,96 @@
+﻿body {
+}
+.goright
+{
+position:absolute;
+right:629px;
+width:700px;
+background-color:#b0e0e6;
+}
+.tablepurchasegrid 
+{
+  margin-left: 300px;
+  margin-top:-560px;
+  width:80%;
+}
+.inputsforprodlist
+{
+  margin-left:60px;
+}
+.firstpicupload
+{
+  margin-left:50px;
+  width:288px;
+  height: 214px;
+}
+.inputsforprodlist1
+{
+  margin-left:380px;
+  width:300px;
+  height: 231px;
+  margin-top:-210px;
+}
+.inputsforprodlist2
+{
+  margin-left:680px; 
+  width:300px;
+  height: 231px; 
+  margin-top:-230px;
+}
+.inputsforprodlist3
+{
+  margin-left:1000px;
+  width:300px;
+  height: 231px;  
+  margin-top:-68px;
+  margin-top:-230px;
+}
+.Filegodown
+{
+  margin-bottom:0px;
+}
+.picsize
+{
+  width:200px;
+  height: 131px; 
+}
+.subnav1 {
+    width: 100%;
+    height: 36px;
+    background-color: rgb(238, 238, 238);
+    background-repeat: repeat-x;
+    background-image: -moz-linear-gradient(center top , rgb(245, 245, 245) 0%, rgb(238, 238, 238) 100%);
+    border: 1px solid rgb(229, 229, 229);
+    border-radius: 4px 4px 4px 4px;
+}
+.subnav-fixed1{
+    position: fixed;
+    top: 40px;
+    left: 0;
+    right: 0;
+    z-index: 1020; /* 10 less than .navbar-fixed to prevent any overlap */
+    border-color: #d5d5d5;
+    border-width: 0 0 1px; /* drop the border on the fixed edges */
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0;
+    -webkit-box-shadow: inset 0 1px 0 #fff, 0 1px 5px rgba(0,0,0,.1);
+       -moz-box-shadow: inset 0 1px 0 #fff, 0 1px 5px rgba(0,0,0,.1);
+            box-shadow: inset 0 1px 0 #fff, 0 1px 5px rgba(0,0,0,.1);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); /* IE6-9 */
+  }
+  
+  .btn-primary1 {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #006dcc;
+  *background-color: #0044cc;
+  background-repeat: repeat-x;
+    background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+    border-left-color: #0044cc;
+    border-right-color: #0044cc;
+    border-top-color: #0044cc;
+    border-bottom-color: #002a80;
+    height:30px;
+    width:150px;
+}

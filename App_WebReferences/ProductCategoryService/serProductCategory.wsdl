@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProductCategorytwo_GetAll">
+        <s:complexType />
+      </s:element>
+      <s:element name="ProductCategorytwo_GetAllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProductCategorytwo_GetAllResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProductCategoryOne_GetAll">
+        <s:complexType />
+      </s:element>
+      <s:element name="ProductCategoryOne_GetAllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProductCategoryOne_GetAllResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProductCategory_GetCatIdForImages">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProductCategory_GetCatIdForImagesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProductCategory_GetCatIdForImagesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProductCategory_GetProdOneFilterNumber">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProductCategory_GetProdOneFilterNumberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProductCategory_GetProdOneFilterNumberResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProductCategory_GetProdFilteronename">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProductCategory_GetProdFilteronenameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProductCategory_GetProdFilteronenameResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProductCategory_GetAll">
+        <s:complexType />
+      </s:element>
+      <s:element name="ProductCategory_GetAllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProductCategory_GetAllResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateProductCategory">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dataSet">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateProductCategoryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateProductCategoryResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProductCategorytwo_GetAllSoapIn">
+    <wsdl:part name="parameters" element="tns:ProductCategorytwo_GetAll" />
+  </wsdl:message>
+  <wsdl:message name="ProductCategorytwo_GetAllSoapOut">
+    <wsdl:part name="parameters" element="tns:ProductCategorytwo_GetAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProductCategoryOne_GetAllSoapIn">
+    <wsdl:part name="parameters" element="tns:ProductCategoryOne_GetAll" />
+  </wsdl:message>
+  <wsdl:message name="ProductCategoryOne_GetAllSoapOut">
+    <wsdl:part name="parameters" element="tns:ProductCategoryOne_GetAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProductCategory_GetCatIdForImagesSoapIn">
+    <wsdl:part name="parameters" element="tns:ProductCategory_GetCatIdForImages" />
+  </wsdl:message>
+  <wsdl:message name="ProductCategory_GetCatIdForImagesSoapOut">
+    <wsdl:part name="parameters" element="tns:ProductCategory_GetCatIdForImagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProductCategory_GetProdOneFilterNumberSoapIn">
+    <wsdl:part name="parameters" element="tns:ProductCategory_GetProdOneFilterNumber" />
+  </wsdl:message>
+  <wsdl:message name="ProductCategory_GetProdOneFilterNumberSoapOut">
+    <wsdl:part name="parameters" element="tns:ProductCategory_GetProdOneFilterNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProductCategory_GetProdFilteronenameSoapIn">
+    <wsdl:part name="parameters" element="tns:ProductCategory_GetProdFilteronename" />
+  </wsdl:message>
+  <wsdl:message name="ProductCategory_GetProdFilteronenameSoapOut">
+    <wsdl:part name="parameters" element="tns:ProductCategory_GetProdFilteronenameResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProductCategory_GetAllSoapIn">
+    <wsdl:part name="parameters" element="tns:ProductCategory_GetAll" />
+  </wsdl:message>
+  <wsdl:message name="ProductCategory_GetAllSoapOut">
+    <wsdl:part name="parameters" element="tns:ProductCategory_GetAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateProductCategorySoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateProductCategory" />
+  </wsdl:message>
+  <wsdl:message name="UpdateProductCategorySoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateProductCategoryResponse" />
+  </wsdl:message>
+  <wsdl:portType name="serProductCategorySoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProductCategorytwo_GetAll">
+      <wsdl:input message="tns:ProductCategorytwo_GetAllSoapIn" />
+      <wsdl:output message="tns:ProductCategorytwo_GetAllSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProductCategoryOne_GetAll">
+      <wsdl:input message="tns:ProductCategoryOne_GetAllSoapIn" />
+      <wsdl:output message="tns:ProductCategoryOne_GetAllSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProductCategory_GetCatIdForImages">
+      <wsdl:input message="tns:ProductCategory_GetCatIdForImagesSoapIn" />
+      <wsdl:output message="tns:ProductCategory_GetCatIdForImagesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProductCategory_GetProdOneFilterNumber">
+      <wsdl:input message="tns:ProductCategory_GetProdOneFilterNumberSoapIn" />
+      <wsdl:output message="tns:ProductCategory_GetProdOneFilterNumberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProductCategory_GetProdFilteronename">
+      <wsdl:input message="tns:ProductCategory_GetProdFilteronenameSoapIn" />
+      <wsdl:output message="tns:ProductCategory_GetProdFilteronenameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProductCategory_GetAll">
+      <wsdl:input message="tns:ProductCategory_GetAllSoapIn" />
+      <wsdl:output message="tns:ProductCategory_GetAllSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProductCategory">
+      <wsdl:input message="tns:UpdateProductCategorySoapIn" />
+      <wsdl:output message="tns:UpdateProductCategorySoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="serProductCategorySoap" type="tns:serProductCategorySoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductCategorytwo_GetAll">
+      <soap:operation soapAction="http://tempuri.org/ProductCategorytwo_GetAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductCategoryOne_GetAll">
+      <soap:operation soapAction="http://tempuri.org/ProductCategoryOne_GetAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductCategory_GetCatIdForImages">
+      <soap:operation soapAction="http://tempuri.org/ProductCategory_GetCatIdForImages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductCategory_GetProdOneFilterNumber">
+      <soap:operation soapAction="http://tempuri.org/ProductCategory_GetProdOneFilterNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductCategory_GetProdFilteronename">
+      <soap:operation soapAction="http://tempuri.org/ProductCategory_GetProdFilteronename" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductCategory_GetAll">
+      <soap:operation soapAction="http://tempuri.org/ProductCategory_GetAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProductCategory">
+      <soap:operation soapAction="http://tempuri.org/UpdateProductCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="serProductCategorySoap12" type="tns:serProductCategorySoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductCategorytwo_GetAll">
+      <soap12:operation soapAction="http://tempuri.org/ProductCategorytwo_GetAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductCategoryOne_GetAll">
+      <soap12:operation soapAction="http://tempuri.org/ProductCategoryOne_GetAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductCategory_GetCatIdForImages">
+      <soap12:operation soapAction="http://tempuri.org/ProductCategory_GetCatIdForImages" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductCategory_GetProdOneFilterNumber">
+      <soap12:operation soapAction="http://tempuri.org/ProductCategory_GetProdOneFilterNumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductCategory_GetProdFilteronename">
+      <soap12:operation soapAction="http://tempuri.org/ProductCategory_GetProdFilteronename" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductCategory_GetAll">
+      <soap12:operation soapAction="http://tempuri.org/ProductCategory_GetAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProductCategory">
+      <soap12:operation soapAction="http://tempuri.org/UpdateProductCategory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="serProductCategory">
+    <wsdl:port name="serProductCategorySoap" binding="tns:serProductCategorySoap">
+      <soap:address location="http://localhost:19548/MahaplastWebApp_19.9.2012/serProductCategory.asmx" />
+    </wsdl:port>
+    <wsdl:port name="serProductCategorySoap12" binding="tns:serProductCategorySoap12">
+      <soap12:address location="http://localhost:19548/MahaplastWebApp_19.9.2012/serProductCategory.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
