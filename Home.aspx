@@ -112,7 +112,7 @@ Hello world
 <div class="img2">
 <img class="HomeMet" src="Images/WinPhone_0904_260x130_EN-US.png" alt="pipes" width="60" height="90"/>
 <div class="desc">
-Hello world
+Hello world Repo is here!
 </div>
 </div>
 </div>
