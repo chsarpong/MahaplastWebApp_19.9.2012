@@ -9,6 +9,9 @@ using System.Data;
 using System.Configuration;
 using System.IO;
 using System.Web.SessionState;
+using Facebook;
+using Facebook.Reflection;
+
 
 public partial class Department_getAroundProd : System.Web.UI.Page
 {
@@ -18,7 +21,8 @@ public partial class Department_getAroundProd : System.Web.UI.Page
         {
             if (Session["productid"] != null)
                 lbSesProductId.Text = Session["productid"].ToString();
-            getGateroryId();
+            getGateroryId(); 
+            get();
         }
     }
 
@@ -28,9 +32,18 @@ public partial class Department_getAroundProd : System.Web.UI.Page
         int proidforimage = Convert.ToInt32(lbSesProductId.Text);
         Image1.ImageUrl = "~/Handler/GetAroundHandler.ashx?productimageId=" + proidforimage;
        
+    }
 
+    private void get()
+    {
+        FacebookClient dr = new FacebookClient();
+        var accessToken = "AAAIJL8P4hM0BAPqeAJT65AmnM60LUP34oaDo0IRZCibMWQZAk8OOhLQmeyZCTbZCOPPxAVl4iqXkyaG8665IUHigjz3ZCoJowiTLFYZBlTz6lZAa60aoAZBZC";
+        var client = new FacebookClient(accessToken);
+        dynamic me = client.Get("me");
+        string aboutMe = me.about;
     }
 
 
+    
    
 }

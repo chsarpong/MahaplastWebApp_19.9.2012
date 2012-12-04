@@ -116,7 +116,25 @@
         });
 
         // Additional initialization code such as adding Event Listeners goes here
+        FB.Event.subscribe('auth.authResponseChange', function (response) {
+            if (response.status === 'connected') {
+                // the user is logged in and has authenticated your
+                // app, and response.authResponse supplies
+                // the user's ID, a valid access token, a signed
+                // request, and the time the access token 
+                // and signed request each expire
+                var uid = response.authResponse.userID;
+                var accessToken = response.authResponse.accessToken;
 
+                // TODO: Handle the access token
+
+            } else if (response.status === 'not_authorized') {
+                // the user is logged in to Facebook, 
+                // but has not authenticated your app
+            } else {
+                // the user isn't logged in to Facebook.
+            }
+        });
     };
 
     function login() {
@@ -128,21 +146,11 @@
             }
         });
     }
+
 function testAPI() {
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', function(response) {
         console.log('Good to see you, ' + response.name + '.');
-    });
-}
-
-function login() {
-    FB.login(function(response) {
-        if (response.authResponse) {
-            // connected
-                            testAPI();
-        } else {
-            // cancelled
-        }
     });
 }
 
@@ -159,7 +167,7 @@ FB.getLoginStatus(function(response) {
         login();
     }
 });
-};
+
 
     // Load the SDK's source Asynchronously
     // Note that the debug version is being actively developed and might 
@@ -187,5 +195,8 @@ FB.getLoginStatus(function(response) {
 
 <div class="fcbk fb-login-button" data-show-faces="true" data-width="200" data-max-rows="1"></div>
 
-<fb:activity actions="[YOUR_APP_NAMESPACE]:ACTION-TYPE"/></fb:activity>
+<%--<fb:activity actions="[deamshub]:ACTION-TYPE"/></fb:activity>--%>
+
+<div class="fb-like" data-href="http://localhost:19548/MahaplastWebApp_19.9.2012/Account/Login.aspx" data-send="true" data-width="450"></div>
+
 </asp:Content>

@@ -236,6 +236,6 @@
 <%--<div class="fb-activity acttofcbk" data-action="critiqueapp:despise,critiqueapp:review" data-width="260" data-height="900" data-header="true" data-font="arial" data-recommendations="true"></div>--%>
 <div class="fb-like-box acttofcbk" data-href="http://www.facebook.com/platform" data-width="260" data-show-faces="true" data-stream="true" data-header="true"></div>
 <br /><br />
-<div class="fb-like" data-send="true" data-width="20" data-show-faces="true" data-font="arial"></div>
+<div class="fb-like" data-href="http://localhost:19548/MahaplastWebApp_19.9.2012/Services/GetAround.aspx" data-send="true" data-width="450" data-show-faces="true"></div>
 </asp:Content>
 
