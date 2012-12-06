@@ -38,7 +38,7 @@ public partial class Services_GetAround : System.Web.UI.Page
             foreach (DataRow dr in dataset.Tables[0].Rows)
             {
                 //DataRow dr = dataset.Tables[0].Rows[0];
-
+               
                 int proidforimage = 0;
 
                 lbproidforimage.Text = dr["productid"].ToString();
@@ -46,7 +46,7 @@ public partial class Services_GetAround : System.Web.UI.Page
                 Session["productid"] = proidforimage;
 
                 Image5.ImageUrl = "~/Handler/GetAroundHandler.ashx?productimageId=" + proidforimage;
-                              
+
             }
         }
         catch
@@ -87,7 +87,6 @@ public partial class Services_GetAround : System.Web.UI.Page
         
         ProductCategoryService.serProductCategory getfascategoryone = new ProductCategoryService.serProductCategory();
         DataSet dataset = getfascategoryone.ProductCategoryOne_GetAll();
-
        
 
         ListBoxF1.Items.Clear();

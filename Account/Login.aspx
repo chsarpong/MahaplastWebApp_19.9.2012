@@ -91,7 +91,7 @@
                   <a href="../CreateBusAcct.aspx">Register as merchant</a>
     </div>
 
-
+    <br /><br />
 
 <div id="Div1"></div>
 <script type="text/javascript">
@@ -193,10 +193,10 @@ FB.getLoginStatus(function(response) {
 
 <script type="text/C#" src="//connect.facebook.net/en_US/all.js"></script>
 
-<div class="fcbk fb-login-button" data-show-faces="true" data-width="200" data-max-rows="1"></div>
-
+<div class="fcbk fb-login-button" data-show-faces="true" data-width="1000" data-max-rows="1" size="xlarge"></div>
+<br /><br />
 <%--<fb:activity actions="[deamshub]:ACTION-TYPE"/></fb:activity>--%>
 
 <div class="fb-like" data-href="http://localhost:19548/MahaplastWebApp_19.9.2012/Account/Login.aspx" data-send="true" data-width="450"></div>
-
+   
 </asp:Content>

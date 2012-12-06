@@ -26,7 +26,7 @@ public partial class MerchantInfoSys_Stock : System.Web.UI.Page
         ProductService.serProduct stock = new ProductService.serProduct();
         DataSet dataset = stock.Product_GetStock();
 
-        //string x= dataset.GetXml();
+        //string x = dataset.GetXml();
 
          //Create a DataSet from Database
 

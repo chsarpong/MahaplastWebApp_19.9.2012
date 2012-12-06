@@ -22,7 +22,7 @@ public partial class Department_getAroundProd : System.Web.UI.Page
             if (Session["productid"] != null)
                 lbSesProductId.Text = Session["productid"].ToString();
             getGateroryId(); 
-            get();
+            //get();
         }
     }
 
@@ -34,14 +34,16 @@ public partial class Department_getAroundProd : System.Web.UI.Page
        
     }
 
-    private void get()
-    {
-        FacebookClient dr = new FacebookClient();
-        var accessToken = "AAAIJL8P4hM0BAPqeAJT65AmnM60LUP34oaDo0IRZCibMWQZAk8OOhLQmeyZCTbZCOPPxAVl4iqXkyaG8665IUHigjz3ZCoJowiTLFYZBlTz6lZAa60aoAZBZC";
-        var client = new FacebookClient(accessToken);
-        dynamic me = client.Get("me");
-        string aboutMe = me.about;
-    }
+    //fcbk coding
+
+    //private void get()
+    //{
+    //    FacebookClient dr = new FacebookClient();
+    //    var accessToken = "AAAIJL8P4hM0BAPqeAJT65AmnM60LUP34oaDo0IRZCibMWQZAk8OOhLQmeyZCTbZCOPPxAVl4iqXkyaG8665IUHigjz3ZCoJowiTLFYZBlTz6lZAa60aoAZBZC";
+    //    var client = new FacebookClient(accessToken);
+    //    dynamic me = client.Get("me");
+    //    string aboutMe = me.about;
+    //}
 
 
     

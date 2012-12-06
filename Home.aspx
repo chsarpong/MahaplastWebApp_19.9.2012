@@ -35,7 +35,18 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <%--  <h2 class="Mashaplast">Mashaplast</h2>--%>
-    <%--Category--%>
+  <br />  
+ <br />
+ <div>
+ <h1 class="brandmarketplace">Marketplace</h1>
+  <%--   <asp:DropDownList ID="DropDownList1" runat="server">
+     </asp:DropDownList>--%>
+ <asp:TextBox ID="TextBox1" runat="server" Width="400px" Height="21px"></asp:TextBox>
+ <asp:Button ID="Button1" class="btn btn-primary btn-large" Width="120px" runat="server" Text="Find more" />
+ </div>
+ <hr />
+
+<%--Category--%>
 <div class="sidenavediv">
 <ul class="nav nav-list bs-docs-sidenav affix">
           <li class="active"><a href="#dropdowns"><i class="icon-chevron-right"></i> Shop by Department</a></li>
