@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GeneralService" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAgACAAAAA=</HashCode>
+      <FileName>App_Code\GeneralService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="serBid" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAgACAAAAA=</HashCode>
+      <FileName>App_Code\serBid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="serBidTransaction" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAgACAAAAA=</HashCode>
+      <FileName>App_Code\serBidTransaction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="serBrand" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgACAAAQA=</HashCode>
+      <FileName>App_Code\serBrand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="serBuyer" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAQUAAIAAAAAAAAAAAgAAAAAAAgACEAAAA=</HashCode>
+      <FileName>App_Code\serBuyer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="serBuyerAddress" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgACAAAAA=</HashCode>
+      <FileName>App_Code\serBuyerAddress.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="serDay" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghACAAAAA=</HashCode>
+      <FileName>App_Code\serDay.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="serGender" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAgACAAAQA=</HashCode>
+      <FileName>App_Code\serGender.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="serMerchant" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAgAAAAAAAEAAAAAAAAAAABAgACAAAAA=</HashCode>
+      <FileName>App_Code\serMerchant.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="serMerchantAddress" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAgACAAAAA=</HashCode>
+      <FileName>App_Code\serMerchantAddress.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="serMerchantSelShipment" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgACAAACA=</HashCode>
+      <FileName>App_Code\serMerchantSelShipment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="serMerchantType" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAACAAAAAAAABAAAAAAAAAAAAAAAgACAAAAA=</HashCode>
+      <FileName>App_Code\serMerchantType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="serMonth" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAgACCAAAA=</HashCode>
+      <FileName>App_Code\serMonth.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="serOrders" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgACAAAAA=</HashCode>
+      <FileName>App_Code\serOrders.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="serOrderStatus" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAgACAAAAA=</HashCode>
+      <FileName>App_Code\serOrderStatus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="serPaymentType" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAgACAAAAA=</HashCode>
+      <FileName>App_Code\serPaymentType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="serProdctImage" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEBAAAAAAAAAQAAJAAAAAAAACAAAASAACAAgICAAIBA=</HashCode>
+      <FileName>App_Code\serProdctImage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="serProduct" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAIAAAAAgAAAAAAAAAAACAAAAAAAAAEAAgACACAAA=</HashCode>
+      <FileName>App_Code\serProduct.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="serProductCategory" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAEAAAAQAAEAAAAAAIAAAAAAAAAAAAAAEgACAAIAA=</HashCode>
+      <FileName>App_Code\serProductCategory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="serSellingLead" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAggCQAAAA=</HashCode>
+      <FileName>App_Code\serSellingLead.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="serShippingCompany" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAEAAAAAAAgACAAAAA=</HashCode>
+      <FileName>App_Code\serShippingCompany.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="serShippingStatus" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAiAAAAA=</HashCode>
+      <FileName>App_Code\serShippingStatus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="serShippingType" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAgACABBAA=</HashCode>
+      <FileName>App_Code\serShippingType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="serYear" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAABAAAAAAAAAAgACAAAAA=</HashCode>
+      <FileName>App_Code\serYear.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
