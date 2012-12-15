@@ -119,7 +119,7 @@
 
     <br /><br />
     <asp:Label ID="lbSesProductId" runat="server" Text="Label"></asp:Label>
-
+    <a href="../Test.asmx">../Test.asmx</a>
    
     
 </asp:Content>
