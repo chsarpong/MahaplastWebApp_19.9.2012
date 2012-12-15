@@ -166,7 +166,20 @@
             ConnectionString="<%$ ConnectionStrings:ConnectionString2 %>" 
             SelectCommand="SELECT * FROM [GENDER]"></asp:SqlDataSource>
     </div>
-
+    <div>
+        <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" 
+            DataKeyNames="yearcode" DataSourceID="SqlDataSource2">
+            <Columns>
+                <asp:BoundField DataField="yearcode" HeaderText="yearcode" ReadOnly="True" 
+                    SortExpression="yearcode" />
+                <asp:BoundField DataField="dob_year" HeaderText="dob_year" 
+                    SortExpression="dob_year" />
+            </Columns>
+        </asp:GridView>
+        <asp:SqlDataSource ID="SqlDataSource2" runat="server" 
+            ConnectionString="<%$ ConnectionStrings:Server=d4e1e593-8399-47f3-ba34-a12100a76a23.sqlserver.sequelizer.com;Database=dbd4e1e593839947f3ba34a12100a76a23;User ID=tbykarfkayrhpesz;Password=FhL25hiutpgaLkAxxj7KkAQaRzn4tse8xdJG866L3MfVHkUYFs4AkgTfyLjD4oab; %>" 
+            SelectCommand="SELECT * FROM [YEAR]"></asp:SqlDataSource>
+    </div>
 
 </asp:Content>
 
