@@ -99,7 +99,7 @@
 <asp:Label ID="lbMathingCategory" runat="server" Text="Matching Category"></asp:Label>
 <asp:TextBox ID="tbMatchingCategory" runat="server"></asp:TextBox>
 <br />
-Buyer User Id
+Merchant User Id
 <asp:TextBox ID="tbBuyerId" runat="server"></asp:TextBox>
 <br /><br />
 <asp:Label ID="lbErr" runat="server" Text="Label"></asp:Label>
