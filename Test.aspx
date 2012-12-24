@@ -177,11 +177,11 @@
             </Columns>
         </asp:GridView>
         <asp:SqlDataSource ID="SqlDataSource2" runat="server" 
-            ConnectionString="<%$ ConnectionStrings:Server=d4e1e593-8399-47f3-ba34-a12100a76a23.sqlserver.sequelizer.com;Database=dbd4e1e593839947f3ba34a12100a76a23;User ID=tbykarfkayrhpesz;Password=FhL25hiutpgaLkAxxj7KkAQaRzn4tse8xdJG866L3MfVHkUYFs4AkgTfyLjD4oab; %>" 
+            ConnectionString="<%$ ConnectionStrings:Data Source=d16d2063-ff11-47f5-a572-a12e00b8f2b8.sqlserver.sequelizer.com;Initial Catalog=dbd16d2063ff1147f5a572a12e00b8f2b8;Persist Security Info=True;User ID=kyhomqfpcflgwyte;Password=opvw7gTf3yKK88KHRSw865qNyU2SnpQj6mKV3LZqmmNebJKhJ3EiHUms8Q6mobZM %>" 
             SelectCommand="SELECT * FROM [YEAR]"></asp:SqlDataSource>
     </div>
 
-    <div>
+ <%--   <div>
     <asp:GridView ID="GridView3" runat="server" AutoGenerateColumns="False" 
             DataKeyNames="yearcode" DataSourceID="SqlDataSource3">
         <Columns>
@@ -194,7 +194,9 @@
         <asp:SqlDataSource ID="SqlDataSource3" runat="server" 
             ConnectionString="<%$ ConnectionStrings:dbd16d2063ff1147f5a572a12e00b8f2b8ConnectionString %>" 
             SelectCommand="SELECT * FROM [YEAR]"></asp:SqlDataSource>
-    </div>
+    </div>--%>
 
+    <asp:GridView ID="GridView3" runat="server"></asp:GridView>
+   
 </asp:Content>
 
