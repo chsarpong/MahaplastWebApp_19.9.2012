@@ -118,7 +118,7 @@ public class serYear : System.Web.Services.WebService {
             //paramDelete_2.SourceVersion = DataRowVersion.Current;
 
             // 6. Get the connection string for the database
-            String connectionString = ConfigurationManager.ConnectionStrings["ConnectionString2"].ConnectionString;
+            String connectionString = ConfigurationManager.ConnectionStrings["Server=d16d2063-ff11-47f5-a572-a12e00b8f2b8.sqlserver.sequelizer.com;Database=dbd16d2063ff1147f5a572a12e00b8f2b8;User ID=kyhomqfpcflgwyte;Password=opvw7gTf3yKK88KHRSw865qNyU2SnpQj6mKV3LZqmmNebJKhJ3EiHUms8Q6mobZM;"].ConnectionString;
 
             // 7. Create an SqlConnection object
             sqlConnection = new SqlConnection(connectionString);
@@ -183,7 +183,7 @@ public class serYear : System.Web.Services.WebService {
         try
         {
             // 0. Get the connection string for the database
-            String connectionString = ConfigurationManager.ConnectionStrings["ConnectionString2"].ConnectionString;
+            String connectionString = ConfigurationManager.ConnectionStrings["Server=d16d2063-ff11-47f5-a572-a12e00b8f2b8.sqlserver.sequelizer.com;Database=dbd16d2063ff1147f5a572a12e00b8f2b8;User ID=kyhomqfpcflgwyte;Password=opvw7gTf3yKK88KHRSw865qNyU2SnpQj6mKV3LZqmmNebJKhJ3EiHUms8Q6mobZM;"].ConnectionString;
 
             // 1. Create an SqlConnection object
             sqlConnection = new SqlConnection(connectionString);

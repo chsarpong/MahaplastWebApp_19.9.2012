@@ -119,7 +119,7 @@ public class Test : System.Web.Services.WebService {
             //paramDelete_2.SourceVersion = DataRowVersion.Current;
 
             // 6. Get the connection string for the database
-            String connectionString = ConfigurationManager.ConnectionStrings["Server=d4e1e593-8399-47f3-ba34-a12100a76a23.sqlserver.sequelizer.com;Database=dbd4e1e593839947f3ba34a12100a76a23;User ID=tbykarfkayrhpesz;Password=FhL25hiutpgaLkAxxj7KkAQaRzn4tse8xdJG866L3MfVHkUYFs4AkgTfyLjD4oab;"].ConnectionString;
+            String connectionString = ConfigurationManager.ConnectionStrings["Server=d16d2063-ff11-47f5-a572-a12e00b8f2b8.sqlserver.sequelizer.com;Database=dbd16d2063ff1147f5a572a12e00b8f2b8;User ID=kyhomqfpcflgwyte;Password=opvw7gTf3yKK88KHRSw865qNyU2SnpQj6mKV3LZqmmNebJKhJ3EiHUms8Q6mobZM;"].ConnectionString;
 
             // 7. Create an SqlConnection object
             sqlConnection = new SqlConnection(connectionString);
@@ -184,7 +184,7 @@ public class Test : System.Web.Services.WebService {
         try
         {
             // 0. Get the connection string for the database
-            String connectionString = ConfigurationManager.ConnectionStrings["Server=d4e1e593-8399-47f3-ba34-a12100a76a23.sqlserver.sequelizer.com;Database=dbd4e1e593839947f3ba34a12100a76a23;User ID=tbykarfkayrhpesz;Password=FhL25hiutpgaLkAxxj7KkAQaRzn4tse8xdJG866L3MfVHkUYFs4AkgTfyLjD4oab;"].ConnectionString;
+            String connectionString = ConfigurationManager.ConnectionStrings["Server=d16d2063-ff11-47f5-a572-a12e00b8f2b8.sqlserver.sequelizer.com;Database=dbd16d2063ff1147f5a572a12e00b8f2b8;User ID=kyhomqfpcflgwyte;Password=opvw7gTf3yKK88KHRSw865qNyU2SnpQj6mKV3LZqmmNebJKhJ3EiHUms8Q6mobZM;"].ConnectionString;
 
             // 1. Create an SqlConnection object
             sqlConnection = new SqlConnection(connectionString);

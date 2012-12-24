@@ -181,5 +181,20 @@
             SelectCommand="SELECT * FROM [YEAR]"></asp:SqlDataSource>
     </div>
 
+    <div>
+    <asp:GridView ID="GridView3" runat="server" AutoGenerateColumns="False" 
+            DataKeyNames="yearcode" DataSourceID="SqlDataSource3">
+        <Columns>
+            <asp:BoundField DataField="yearcode" HeaderText="yearcode" ReadOnly="True" 
+                SortExpression="yearcode" />
+            <asp:BoundField DataField="dob_year" HeaderText="dob_year" 
+                SortExpression="dob_year" />
+        </Columns>
+        </asp:GridView>
+        <asp:SqlDataSource ID="SqlDataSource3" runat="server" 
+            ConnectionString="<%$ ConnectionStrings:dbd16d2063ff1147f5a572a12e00b8f2b8ConnectionString %>" 
+            SelectCommand="SELECT * FROM [YEAR]"></asp:SqlDataSource>
+    </div>
+
 </asp:Content>
 
